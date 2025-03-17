@@ -1,0 +1,426 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #062d1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ***********NAVBAR************* */
+.navbar-brand {
+  padding: 20px 40px;
+}
+
+.navbar {
+  background: rgb(244, 244, 244);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: absolute;
+}
+
+.nav-link {
+  justify-content: center;
+}
+
+.nav-item .bk {
+  background: linear-gradient(to right, #7437dd, #f89c5a);
+  border-radius: 8px;
+}
+
+.hamburger {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  box-shadow: rgb(198, 192, 192);
+}
+.menu- {
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+/* *************1st PAGE************* */
+
+.container {
+  background: linear-gradient(to right, #7437dd, #f89c5a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* padding: 1.5rem; */
+  border-radius: 8px;
+  z-index: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px;
+}
+
+.earn-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.earn-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 50%;
+  /* margin-left: 50px; */
+}
+
+.earn-box span {
+  display: block;
+  text-align: center;
+}
+
+.earn-box .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.earn-box .text {
+  font-size: 0.875rem;
+}
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 20px 5px 10px 5px;
+}
+
+.content {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.content h1 {
+  /* font-size: 25px; */
+  font-weight: bold;
+  color: black;
+}
+
+.content p {
+  margin-top: 0.5rem;
+  font-size: 13px;
+  color: black;
+}
+
+.bonus-badge {
+  position: relative;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border-radius: 50%;
+}
+
+/* BONUSES */
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  margin: 0px 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(247, 244, 244) 0%,
+    rgb(222, 222, 222) 100%
+  );
+  border-radius: 2px;
+}
+
+.entry {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Reward Cards */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 30px;
+  margin-top: 100px;
+  height: 100vh;
+}
+
+.bonus-cards.green {
+  background: linear-gradient(to bottom, #0a603a, #5fbc94);
+}
+
+.bonus-cards {
+  background-color: bisque;
+  color: black;
+  text-align: center;
+  width: 250px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 25px;
+}
+
+.points {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 30px);
+  background: linear-gradient(to bottom right, #c98f42 0%, #d7b789 100%);
+  border-radius: 50%;
+}
+
+.bonus {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.small {
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.congrats {
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.buttn {
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttn:hover {
+  opacity: 0.8;
+}
+
+/* ********* FLOATING NOTIFICATION******** */
+
+.notification {
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e8e8f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000; /* Ensure it’s on top of other elements */
+}
+
+.icon img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.message {
+  flex: 1;
+}
+
+/* *************FOOTER************** */
+
+#wrappercontainer > .myfooter {
+  background-color: #0d4d34;
+  margin-top: 50px;
+}
+
+#wrappercontainer {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+#myfooter {
+  padding: 40px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+#f-logo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footerlinks1 {
+  width: auto;
+  float: left;
+  padding: 40px 80px;
+}
+
+.footerlinks2 {
+  width: auto;
+  float: left;
+  padding-left: 90px;
+  padding-right: 135px;
+  text-align: left;
+}
+
+.links {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+@media screen and (max-width: 1450px) {
+  #myfooter {
+    max-width: 1100px;
+  }
+  .footerlinks1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footerlinks2 {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #myfooter {
+    max-width: 1000px;
+  }
+  .footerlinks1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footerlinks2 {
+    padding-right: 20px;
+  }
+}
+
+/* ******* REFERRAL PAGE ******* */
+
+.bg {
+  background-color: beige;
+  margin: 0;
+}
+
+.refer-container {
+  display: grid;
+  grid-template-columns: 250px 800px;
+
+  margin: auto;
+  border-radius: 10px;
+  /* padding: 20px; */
+}
+
+.referral {
+  margin: 30px;
+}
+
+.bonus-entry {
+  background: bisque;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bonus-circle {
+  background: burlywood;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin: 30px 70px;
+}
+
+.box-container {
+  background: white;
+  border-radius: 8px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.success {
+  color: rgb(130, 62, 62);
+}
+
+.lnk {
+  font-size: 15px;
+}
+
+.btns {
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btns:hover {
+  cursor: pointer;
+}
+
+.back {
+  text-align: center;
+  margin-left: 20px;
+  background: black;
+  color: white;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.grid-item {
+  padding: 5px;
+  gap: 10px;
+}
+
+.social-icons {
+  margin: 30px;
+  text-align: center;
+}
